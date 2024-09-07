@@ -6,11 +6,10 @@ const router = express.Router()
 
 
 router.get("/",controllerEstudiante.getEstudiantes)
-
 router.get("/:id",controllerEstudiante.getEstudiantePorId)
 router.post("/",controllerEstudiante.create)//()=> console.log("post estudiante"))
 router.put("/:id",controllerEstudiante.upDateEstudiantesPorId)
-router.delete("/",()=> console.log("eliminar estudiante"))
+router.delete("/:id",controllerEstudiante.deleteEstudiantePorId)
 
 
 module.exports = router
