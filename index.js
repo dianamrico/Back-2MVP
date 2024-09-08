@@ -23,4 +23,4 @@ app.use("/api/estudiante",routerEstudiantes)
 
  app.listen(port,()=>{
     console.log(`escuchando el puerto ${port}`)
- })
+ }) 
